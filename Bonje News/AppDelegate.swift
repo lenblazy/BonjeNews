@@ -10,10 +10,17 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // change color  of nav bar
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(red: 0.82, green: 0.84, blue: 0.62, alpha: 1.00)]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(red: 0.82, green: 0.84, blue: 0.62, alpha: 1.00)]
+        navBarAppearance.backgroundColor = UIColor(red: 0.28, green: 0.22, blue: 0.22, alpha: 1.00)
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        
         return true
     }
 

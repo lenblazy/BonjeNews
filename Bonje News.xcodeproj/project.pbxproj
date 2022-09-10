@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		48B7416328CC5855004828C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7416228CC5855004828C8 /* AppDelegate.swift */; };
 		48B7416528CC5855004828C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7416428CC5855004828C8 /* SceneDelegate.swift */; };
-		48B7416728CC5855004828C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7416628CC5855004828C8 /* ViewController.swift */; };
 		48B7416A28CC5855004828C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7416828CC5855004828C8 /* Main.storyboard */; };
 		48B7416C28CC585A004828C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B7416B28CC585A004828C8 /* Assets.xcassets */; };
 		48B7416F28CC585A004828C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7416D28CC585A004828C8 /* LaunchScreen.storyboard */; };
+		48B7417828CC58AD004828C8 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7417728CC58AD004828C8 /* NewsVC.swift */; };
+		48B7417B28CC5DA9004828C8 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7417A28CC5DA9004828C8 /* WebServices.swift */; };
+		48B7417E28CC614A004828C8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7417D28CC614A004828C8 /* Article.swift */; };
+		48B7418128CC6680004828C8 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7418028CC6680004828C8 /* ArticleViewModel.swift */; };
+		48B7418428CC6A3E004828C8 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7418328CC6A3E004828C8 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48B7415F28CC5855004828C8 /* Bonje News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bonje News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B7416228CC5855004828C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B7416428CC5855004828C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48B7416628CC5855004828C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48B7416928CC5855004828C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B7416B28CC585A004828C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B7416E28CC585A004828C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B7417028CC585B004828C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B7417728CC58AD004828C8 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		48B7417A28CC5DA9004828C8 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		48B7417D28CC614A004828C8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		48B7418028CC6680004828C8 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		48B7418328CC6A3E004828C8 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		48B7416128CC5855004828C8 /* Bonje News */ = {
 			isa = PBXGroup;
 			children = (
+				48B7418228CC6A0A004828C8 /* Cells */,
+				48B7417F28CC6668004828C8 /* ViewModels */,
+				48B7417C28CC613C004828C8 /* Models */,
+				48B7417928CC5D9B004828C8 /* Services */,
+				48B7417628CC5897004828C8 /* Controllers */,
 				48B7416228CC5855004828C8 /* AppDelegate.swift */,
 				48B7416428CC5855004828C8 /* SceneDelegate.swift */,
-				48B7416628CC5855004828C8 /* ViewController.swift */,
 				48B7416828CC5855004828C8 /* Main.storyboard */,
 				48B7416B28CC585A004828C8 /* Assets.xcassets */,
 				48B7416D28CC585A004828C8 /* LaunchScreen.storyboard */,
 				48B7417028CC585B004828C8 /* Info.plist */,
 			);
 			path = "Bonje News";
+			sourceTree = "<group>";
+		};
+		48B7417628CC5897004828C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48B7417728CC58AD004828C8 /* NewsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48B7417928CC5D9B004828C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				48B7417A28CC5DA9004828C8 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		48B7417C28CC613C004828C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48B7417D28CC614A004828C8 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48B7417F28CC6668004828C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				48B7418028CC6680004828C8 /* ArticleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		48B7418228CC6A0A004828C8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48B7418328CC6A3E004828C8 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B7416728CC5855004828C8 /* ViewController.swift in Sources */,
 				48B7416328CC5855004828C8 /* AppDelegate.swift in Sources */,
 				48B7416528CC5855004828C8 /* SceneDelegate.swift in Sources */,
+				48B7417B28CC5DA9004828C8 /* WebServices.swift in Sources */,
+				48B7418128CC6680004828C8 /* ArticleViewModel.swift in Sources */,
+				48B7417828CC58AD004828C8 /* NewsVC.swift in Sources */,
+				48B7418428CC6A3E004828C8 /* ArticleTableViewCell.swift in Sources */,
+				48B7417E28CC614A004828C8 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
